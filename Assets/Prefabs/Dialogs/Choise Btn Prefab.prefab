@@ -151,6 +151,7 @@ MonoBehaviour:
   _nodeDisplayer: {fileID: 0}
   _choice:
     answer: 
+    events: []
     node: {fileID: 0}
   _textToDisplay: {fileID: 2584480041520470239}
 --- !u!114 &5209052240771649628
