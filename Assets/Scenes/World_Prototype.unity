@@ -4589,6 +4589,13 @@ MonoBehaviour:
       Data3: 1291946943
       Data4: 2017708338
     Path: event:/ShroomPondBasic
+  <frogLeaf>k__BackingField:
+    Guid:
+      Data1: 200386287
+      Data2: 1297493198
+      Data3: -1056811645
+      Data4: 2116393393
+    Path: event:/FrogLeaf
 --- !u!1 &1348031833
 GameObject:
   m_ObjectHideFlags: 0

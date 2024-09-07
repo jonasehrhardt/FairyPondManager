@@ -30,6 +30,11 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
+    private void PlayOneShot(EventReference sound, Vector3 worldPos)
+    {
+        RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
     private void Start()
     {
         InitAmbience(FmodEvents.instance.pondSound);
