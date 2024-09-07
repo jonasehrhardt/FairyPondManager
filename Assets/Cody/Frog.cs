@@ -23,6 +23,7 @@ public class Frog : MonoBehaviour
     {
         if (Given && !movedToParty)
         {
+            AudioManager.instance.PlayOneShot(FmodEvents.instance.frogLeaf, this.transform.position);
             // Immediately trigger the "Given" animation
             TriggerGivenAnimation();
 

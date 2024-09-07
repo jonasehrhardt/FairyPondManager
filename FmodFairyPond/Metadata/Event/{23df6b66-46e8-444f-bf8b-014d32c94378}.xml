@@ -59,7 +59,11 @@
 			<destination>{481f88cf-7982-4e83-8070-7d6db70d33d8}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{ff183436-c6b0-478c-8607-8d9f896d9ebe}" />
+	<object class="EventAutomatableProperties" id="{ff183436-c6b0-478c-8607-8d9f896d9ebe}">
+		<property name="maximumDistance">
+			<value>3.20000005</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{12cd0b58-9c30-472a-8f51-16fb5eb08cc1}" />
 	<object class="Timeline" id="{e16f247c-4eec-4058-9cb4-396f99e16fc9}">
 		<relationship name="modules">
@@ -124,10 +128,10 @@
 	</object>
 	<object class="MixerBusPanner" id="{35d315e1-ad2c-4c3a-a87f-5209b106e866}">
 		<property name="surroundPanDirection">
-			<value>134.090622</value>
+			<value>-137.235641</value>
 		</property>
 		<property name="surroundPanExtent">
-			<value>322.487</value>
+			<value>267.388885</value>
 		</property>
 	</object>
 	<object class="FadeCurve" id="{8fd7b683-c016-4fd5-9174-0eb9bfbf65d1}">

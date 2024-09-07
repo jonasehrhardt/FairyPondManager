@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
-    private void PlayOneShot(EventReference sound, Vector3 worldPos)
+    public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
     }

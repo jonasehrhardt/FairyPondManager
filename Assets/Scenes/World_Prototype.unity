@@ -7786,7 +7786,7 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 9
+  OverrideMinDistance: 10
   OverrideMaxDistance: 12
 --- !u!1 &2060101719
 GameObject:
@@ -9611,6 +9611,7 @@ GameObject:
   - component: {fileID: 4199044344546307767}
   - component: {fileID: 2028756402393213169}
   - component: {fileID: 3889129330412728017}
+  - component: {fileID: 6179687379041984079}
   m_Layer: 0
   m_Name: Terrace
   m_TagString: Untagged
@@ -9618,6 +9619,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6179687379041984079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6179687379041984078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 601844582
+      Data2: 1146046184
+      Data3: 1291946943
+      Data4: 2017708338
+    Path: event:/ShroomPondBasic
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!4 &6308863982258928370
 Transform:
   m_ObjectHideFlags: 0
