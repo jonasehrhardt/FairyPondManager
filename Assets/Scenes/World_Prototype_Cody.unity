@@ -352,7 +352,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -568,7 +568,6 @@ GameObject:
   - component: {fileID: 113752646}
   - component: {fileID: 113752645}
   - component: {fileID: 113752644}
-  - component: {fileID: 113752647}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -663,37 +662,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113752642}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &113752647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113752642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 601844582
-      Data2: 1146046184
-      Data3: 1291946943
-      Data4: 2017708338
-    Path: event:/ShroomPondBasic
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &123974267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,10 +3158,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Controller Minimal
       objectReference: {fileID: 0}
-    - target: {fileID: 5253712882846181220, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     m_RemovedComponents:
     - {fileID: 5304019296978978324, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
     m_RemovedGameObjects:
@@ -5297,27 +5261,6 @@ MonoBehaviour:
       Data3: -1279351118
       Data4: 2125008661
     Path: event:/Footsteps
-  <partyMusic>k__BackingField:
-    Guid:
-      Data1: 309305646
-      Data2: 1169972340
-      Data3: 697196161
-      Data4: -1178752391
-    Path: event:/ShroomPondParty
-  <basicMusic>k__BackingField:
-    Guid:
-      Data1: 601844582
-      Data2: 1146046184
-      Data3: 1291946943
-      Data4: 2017708338
-    Path: event:/ShroomPondBasic
-  <frogLeaf>k__BackingField:
-    Guid:
-      Data1: 200386287
-      Data2: 1297493198
-      Data3: -1056811645
-      Data4: 2116393393
-    Path: event:/FrogLeaf
 --- !u!1 &1348031833
 GameObject:
   m_ObjectHideFlags: 0
@@ -7630,7 +7573,6 @@ GameObject:
   - component: {fileID: 2033823495}
   - component: {fileID: 2033823494}
   - component: {fileID: 2033823497}
-  - component: {fileID: 2033823498}
   m_Layer: 0
   m_Name: Pond
   m_TagString: Untagged
@@ -7757,37 +7699,6 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 1
   OverrideMaxDistance: 25
---- !u!114 &2033823498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033823492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 309305646
-      Data2: 1169972340
-      Data3: 697196161
-      Data4: -1178752391
-    Path: event:/ShroomPondParty
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 9
-  OverrideMaxDistance: 12
 --- !u!1 &2060101719
 GameObject:
   m_ObjectHideFlags: 0
