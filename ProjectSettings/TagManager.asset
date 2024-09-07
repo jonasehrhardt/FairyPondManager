@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Pickup
+  - 
   - Water
   - UI
-  - Frog
-  - 
-  - 
+  - RealWorld
+  - MidWorld
+  - FantasyWorld
   - 
   - 
   - 

@@ -9,6 +9,9 @@ public class FmodEvents : MonoBehaviour
     [field: Header("PondSound")]
     [field: SerializeField] public EventReference pondSound { get; private set; }
 
+    [field: Header("Footsteps")]
+    [field: SerializeField] public EventReference playerFootsteps { get; private set; }
+
     public static FmodEvents instance { get; private set; }
 
     private void Awake() 

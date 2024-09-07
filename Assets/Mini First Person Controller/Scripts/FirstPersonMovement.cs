@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class FirstPersonMovement : MonoBehaviour
 {
@@ -15,8 +16,31 @@ public class FirstPersonMovement : MonoBehaviour
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
+    // audio
+    private EventInstance playerFootsteps;
 
 
+    private void Start()
+    {
+        playerFootsteps = AudioManager.instance.CreateInstance(FmodEvents.instance.playerFootsteps);
+    }
+
+    private void UpdateSound() 
+    {
+
+        if (rigidbody.velocity.x != 0) {
+
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+        }
+        else {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
     void Awake()
     {
         // Get the rigidbody on this.
@@ -40,5 +64,7 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+
+        UpdateSound();
     }
 }
