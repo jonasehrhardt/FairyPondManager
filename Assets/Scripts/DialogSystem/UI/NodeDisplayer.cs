@@ -13,6 +13,7 @@ namespace DialogSystem.UI
         [SerializeField] private Vector2 _randomizationDelay;
 
         [SerializeField] private TextMeshProUGUI _textField;
+        [SerializeField] private TextMeshProUGUI _nameOfSpeaker;
         [SerializeField] private Transform _layoutTransform;        
 
         private List<Choice> _choices = new List<Choice>();
@@ -29,6 +30,7 @@ namespace DialogSystem.UI
         public void DisplayText(DialogNode node)
         {
             _lastNode = node;
+            _nameOfSpeaker.text = _lastNode.name;
             _textField.text = string.Empty;
             StartCoroutine(PrintTextAndContinueDialogInLinearCase(node));
         }

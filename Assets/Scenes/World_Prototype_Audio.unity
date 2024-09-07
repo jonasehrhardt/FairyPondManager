@@ -4517,85 +4517,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300774589}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1333408805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1333408806}
-  - component: {fileID: 1333408807}
-  m_Layer: 0
-  m_Name: FmodEvents
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1333408806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333408805}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1695976175}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1333408807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333408805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f79df7e19cb40ac84beadd6fd7c800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <pondSound>k__BackingField:
-    Guid:
-      Data1: 951257108
-      Data2: 1300517591
-      Data3: -1911421539
-      Data4: -118396905
-    Path: event:/PondSound
-  <playerFootsteps>k__BackingField:
-    Guid:
-      Data1: 531829780
-      Data2: 1189710804
-      Data3: -1279351118
-      Data4: 2125008661
-    Path: event:/Footsteps
-  <partyMusic>k__BackingField:
-    Guid:
-      Data1: 309305646
-      Data2: 1169972340
-      Data3: 697196161
-      Data4: -1178752391
-    Path: event:/ShroomPondParty
-  <basicMusic>k__BackingField:
-    Guid:
-      Data1: 601844582
-      Data2: 1146046184
-      Data3: 1291946943
-      Data4: 2017708338
-    Path: event:/ShroomPondBasic
-  <frogLeaf>k__BackingField:
-    Guid:
-      Data1: 200386287
-      Data2: 1297493198
-      Data3: -1056811645
-      Data4: 2116393393
-    Path: event:/FrogLeaf
 --- !u!1 &1348031833
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,51 +5642,11 @@ Transform:
   - {fileID: 154766811}
   m_Father: {fileID: 174789260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1695976174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1695976175}
-  - component: {fileID: 1695976176}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1695976175
+--- !u!4 &1695976175 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+  m_PrefabInstance: {fileID: 7036439084818880370}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695976174}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1333408806}
-  m_Father: {fileID: 60066061}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1695976176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695976174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878a74e3eaa4a45ad8868e06e985a252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1705611373
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,6 +7315,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119575452}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &7036439084818880370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 60066061}
+    m_Modifications:
+    - target: {fileID: 9044417268843466322, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153057193304039376, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1249d5ecb4c61f4eba095b8fab271d1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
