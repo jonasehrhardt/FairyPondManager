@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{84e0fb34-b12c-4f51-87c8-0734dc5c8fa2}">
+		<property name="assetPath">
+			<value>shroom-pond-basic.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>105.58693877551021</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{94cd828f-2281-4741-9f5a-753ee8341b10}</destination>
+		</relationship>
+	</object>
+</objects>

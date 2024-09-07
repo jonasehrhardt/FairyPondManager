@@ -12,6 +12,12 @@ public class FmodEvents : MonoBehaviour
     [field: Header("Footsteps")]
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
+    [field: Header("ShroomPondParty")]
+    [field: SerializeField] public EventReference partyMusic { get; private set; }
+
+    [field: Header("ShroomPondBasic")]
+    [field: SerializeField] public EventReference basicMusic { get; private set; }
+
     public static FmodEvents instance { get; private set; }
 
     private void Awake() 
