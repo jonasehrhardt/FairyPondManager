@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec218df72d2c204093a003f1a9f6bf0, type: 3}
+  m_Name: Bitey 1. 4
+  m_EditorClassIdentifier: 
+  speaker: Connor
+  text: "Hmm, in my opinion, this is what they call \u201Ca big problem\u201D. Let
+    me see what I can do.  "
+  events: []
+  choices: []
+  nextNode: {fileID: 11400000, guid: d27a803b47082184f955b862b6e52571, type: 2}

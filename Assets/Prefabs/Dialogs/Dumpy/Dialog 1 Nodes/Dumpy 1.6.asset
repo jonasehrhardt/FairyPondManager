@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec218df72d2c204093a003f1a9f6bf0, type: 3}
+  m_Name: Dumpy 1.6
+  m_EditorClassIdentifier: 
+  speaker: Dumpy
+  text: "But you see, this is my chance! My chance to finally show everyone what
+    I can do. But\u2026I need your help."
+  events: []
+  choices: []
+  nextNode: {fileID: 11400000, guid: d57a7ab4d50063d4487fbbac45120ac0, type: 2}
