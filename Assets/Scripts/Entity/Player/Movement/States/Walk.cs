@@ -35,6 +35,7 @@ namespace Assets.Scripts.Entity.Player.Movement.States
             //_player.events.onMovementInput.AddListener(UseInput);
             if(!rigidbody)
                 rigidbody = _player.rigidBody;
+            speedOverrides = new List<Func<float>>();
             playerFootsteps = AudioManager.instance.CreateInstance(FmodEvents.instance.playerFootsteps);
         }
 

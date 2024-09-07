@@ -13,6 +13,11 @@ namespace Entity.Player.Movement {
             ChangeState(states.walk);
         }
 
+        public void ChangeStateOnFreeze()
+            => ChangeState(states.freeze);
+        public void ChangeStateOnWalk()
+            => ChangeState(states.walk);
+
         #region Input Reading
         public void ReadInputMovementActions(InputAction.CallbackContext ctx) {
             Vector2 input = ctx.ReadValue<Vector2>();
