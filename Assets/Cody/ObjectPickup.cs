@@ -81,6 +81,7 @@ public class ObjectPickup : MonoBehaviour
     }
 
     // Try to give the held object to the frog
+    // Try to give the held object to the frog
     void TryGiveToFrog()
     {
         // Cast a ray from the center of the screen
@@ -95,7 +96,7 @@ public class ObjectPickup : MonoBehaviour
                 // If we have an object in hand
                 if (heldObject != null)
                 {
-                    // Make sure to remove the highlight before giving the object
+                    // Remove the highlight before giving the object
                     RemoveHighlight();
 
                     // Destroy the held object and stop holding
@@ -113,15 +114,16 @@ public class ObjectPickup : MonoBehaviour
                     Frog frog = hit.collider.GetComponent<Frog>();
                     if (frog != null)
                     {
-                        frog.Given = true;
+                        frog.Given = true; // Set the frog's "Given" state to true
                     }
 
-                    // Remove the highlight from the frog after giving the object
+                    // Ensure the frog is not highlighted after the object is given
                     RemoveHighlight();
                 }
             }
         }
     }
+
 
 
 
@@ -137,52 +139,11 @@ public class ObjectPickup : MonoBehaviour
         // Check for raycast hit
         if (Physics.Raycast(ray, out hit, rayDistance))
         {
-            // Check if we are hitting something on the "Pickup" layer
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Pickup"))
+            // Check if we are hitting something on the "Pickup" or "Frog" layers
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Pickup") ||
+                hit.collider.gameObject.layer == LayerMask.NameToLayer("Frog"))
             {
-                // If the object is not already highlighted, switch the material
-                if (highlightedObject != hit.collider.gameObject)
-                {
-                    RemoveHighlight(); // Remove the highlight from the previously highlighted object
-
-                    // Store the reference to the original material
-                    Renderer objRenderer = hit.collider.GetComponent<Renderer>();
-                    if (objRenderer != null)
-                    {
-                        originalMaterial = objRenderer.material; // Save the original material
-                        objRenderer.material = highlightMaterial; // Switch to the highlight material
-                    }
-
-                    highlightedObject = hit.collider.gameObject; // Update the currently highlighted object
-                }
-            }
-            // Check if we are hitting something on the "Frog" layer, and its "Given" is false
-            else if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Frog"))
-            {
-                Frog frog = hit.collider.GetComponent<Frog>();
-                if (frog != null && !frog.Given) // Only highlight if "Given" is false
-                {
-                    // If the object is not already highlighted, switch the material
-                    if (highlightedObject != hit.collider.gameObject)
-                    {
-                        RemoveHighlight(); // Remove the highlight from the previously highlighted object
-
-                        // Store the reference to the original material
-                        Renderer objRenderer = hit.collider.GetComponent<Renderer>();
-                        if (objRenderer != null)
-                        {
-                            originalMaterial = objRenderer.material; // Save the original material
-                            objRenderer.material = highlightMaterial; // Switch to the highlight material
-                        }
-
-                        highlightedObject = hit.collider.gameObject; // Update the currently highlighted object
-                    }
-                }
-                else
-                {
-                    // Remove the highlight if "Given" is true
-                    RemoveHighlight();
-                }
+                Highlight(hit.collider.gameObject);
             }
             else
             {
@@ -194,6 +155,28 @@ public class ObjectPickup : MonoBehaviour
             RemoveHighlight(); // No hit, so remove the highlight
         }
     }
+
+    // Helper method to handle the actual highlighting
+    void Highlight(GameObject obj)
+    {
+        // If the object is not already highlighted, switch the material
+        if (highlightedObject != obj)
+        {
+            RemoveHighlight(); // Remove the highlight from the previously highlighted object
+
+            // Store the reference to the original material
+            Renderer objRenderer = obj.GetComponent<Renderer>();
+            if (objRenderer != null)
+            {
+                originalMaterial = objRenderer.material; // Save the original material
+                objRenderer.material = highlightMaterial; // Switch to the highlight material
+            }
+
+            highlightedObject = obj; // Update the currently highlighted object
+        }
+    }
+
+
 
 
     // Remove highlight from the currently highlighted object
