@@ -477,7 +477,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Pond
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
