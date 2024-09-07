@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Test 2.1
   m_EditorClassIdentifier: 
   text: Okay
+  events:
+  - End Converstation
   choices: []
-  _nextNode: {fileID: 0}
-  onEnterNode:
-    m_PersistentCalls:
-      m_Calls: []
+  nextNode: {fileID: 0}

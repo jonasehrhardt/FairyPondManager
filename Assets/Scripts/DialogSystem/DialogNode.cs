@@ -9,6 +9,7 @@ namespace DialogSystem
     public class DialogNode : ScriptableObject
     {
         public string text;
+        public string[] events;
         public List<Choice> choices;
         public DialogNode nextNode;
 

@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Test 1.2
   m_EditorClassIdentifier: 
   text: Nice to meet you player
+  events: []
   choices: []
   nextNode: {fileID: 11400000, guid: ff190d22c0ebdeb47ba84dcfa945d714, type: 2}
-  onEnterNode:
-    m_PersistentCalls:
-      m_Calls: []

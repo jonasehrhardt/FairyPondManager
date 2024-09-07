@@ -17,6 +17,7 @@ namespace DialogSystem.UI
 
         public void DoChoice()
         {
+            DialogEventHandler.PlayEvents(_choice.events);
             _nodeDisplayer.DisplayNode(_choice.node);
         }
     }

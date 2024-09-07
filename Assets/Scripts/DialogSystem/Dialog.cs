@@ -7,5 +7,6 @@ namespace DialogSystem
     public class Dialog : ScriptableObject
     {
         public DialogNode startNode;
+        public string[] events;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace DialogSystem.UI
@@ -21,6 +22,7 @@ namespace DialogSystem.UI
         public void DisplayNode(DialogNode node)
         {
             DestroyAllChoices();
+            StopAllCoroutines();
             DisplayText(node);
         }
 
@@ -43,8 +45,10 @@ namespace DialogSystem.UI
             if (!_lastNode.IsLinear)
                 return;
 
-            StopAllCoroutines();
-            DisplayNode(_lastNode.nextNode);
+            StopCoroutine(nameof(PrintTextAndContinueDialogInLinearCase));
+
+            if(!_lastNode.IsEnd)
+                DisplayNode(_lastNode.nextNode);
         }
 
         private void CreateChoices(DialogNode node)
@@ -65,7 +69,13 @@ namespace DialogSystem.UI
                 _textField.text += symbol;
             }
 
+            StartCoroutine(CreateChoicesOrContinueDialog(node));
+        }
+
+        private IEnumerator CreateChoicesOrContinueDialog(DialogNode node)
+        {
             yield return new WaitForSeconds(_timeForChange);
+            DialogEventHandler.PlayEvents(node.events);
             if (node.IsLinear)
                 DisplayNode(node.nextNode);
             else
