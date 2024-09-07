@@ -5,7 +5,7 @@
 			<value>PondSound</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{1596f4bf-d6a8-49a1-b2c4-4912d5dd9ed1}</destination>
@@ -132,6 +132,7 @@
 	<object class="MixerBusEffectChain" id="{50b3c620-7b94-4df3-98f6-bed271a27ebe}">
 		<relationship name="effects">
 			<destination>{43d4476c-0550-48a5-9e18-7926d7ba01ea}</destination>
+			<destination>{762e7918-9c51-4155-98c2-c1959a5c20ab}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{54f1d603-3341-4c63-b252-9465e90e1586}" />
@@ -176,6 +177,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{43d4476c-0550-48a5-9e18-7926d7ba01ea}" />
+	<object class="SpatialiserEffect" id="{762e7918-9c51-4155-98c2-c1959a5c20ab}" />
 	<object class="AutomationPoint" id="{1b6223f4-4ae0-4598-bc69-4fb901a96695}">
 		<property name="position">
 			<value>0</value>
