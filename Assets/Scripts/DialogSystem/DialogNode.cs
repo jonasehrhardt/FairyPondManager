@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace DialogSystem
 {
@@ -11,11 +10,9 @@ namespace DialogSystem
     {
         public string text;
         public List<Choice> choices;
-        [SerializeField] protected DialogNode _nextNode;
+        public DialogNode nextNode;
 
-        public UnityEvent onEnterNode;
-
-        public bool IsLinear => !_nextNode.IsUnityNull() && choices.Count == 0;
-        public bool IsEnd => _nextNode.IsUnityNull() && choices.Count == 0;
+        public bool IsLinear => !nextNode.IsUnityNull() && choices.Count == 0;
+        public bool IsEnd => nextNode.IsUnityNull() && choices.Count == 0;
     }
 }

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 
 namespace DialogSystem
 {
@@ -8,7 +7,5 @@ namespace DialogSystem
     public class Dialog : ScriptableObject
     {
         public DialogNode startNode;
-
-        public UnityEvent onStart;
     }
 }

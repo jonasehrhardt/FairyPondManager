@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Nice to meet you player
   choices: []
-  _nextNode: {fileID: 0}
+  nextNode: {fileID: 11400000, guid: ff190d22c0ebdeb47ba84dcfa945d714, type: 2}
   onEnterNode:
     m_PersistentCalls:
       m_Calls: []

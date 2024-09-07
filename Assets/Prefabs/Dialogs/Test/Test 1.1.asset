@@ -24,7 +24,7 @@ MonoBehaviour:
     onChoice:
       m_PersistentCalls:
         m_Calls: []
-  _nextNode: {fileID: 0}
+  nextNode: {fileID: 0}
   onEnterNode:
     m_PersistentCalls:
       m_Calls: []
